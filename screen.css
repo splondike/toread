@@ -1,0 +1,105 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font: 16px sans-serif;
+  color: #000;
+}
+body {
+  margin: 0 10px;
+}
+.full-width {
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+h1 {
+  background: #222;
+  color: #ddd;
+  padding: 10px 0;
+  margin: 0;
+  font-weight: normal;
+  font-style: sans-serif;
+  text-align: center;
+}
+.items {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+}
+.items .item {
+  list-style: none;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #222;
+  border-width: 1px 0;
+}
+.items .item .title {
+  font-weight: bold;
+}
+.items .item .title .author {
+  font-weight: normal;
+}
+.items .item .title .author:before {
+  content: ' - ';
+}
+.items .actions {
+  text-align: right;
+}
+.items .actions a, .items .actions button, .items .actions form {
+  display: inline;
+}
+.items .actions a, .items .actions button {
+  font-size: 14px;
+  background: none;
+  border: 0;
+  color: #aaa;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 0 5px;
+}
+.items .actions a:hover, .items .actions button:hover {
+  text-decoration: underline;
+}
+
+.large-add-button {
+  display: block;
+  text-align: center;
+  background: #ddd;
+  color: #000;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 10px 0;
+  margin: 10px 20px;
+  border-radius: 10px;
+}
+.large-add-button:hover {
+  background: #222;
+  color: #ddd;
+}
+
+.edit.form {
+  margin-top: 10px;
+  padding:0;
+}
+.edit.form label, .edit.form input, .edit.form textarea {
+  display: block;
+  width: 100%;
+}
+.edit.form label.required:after {
+  color: #ff0000;
+  content: '*';
+}
+.form button {
+  background: #ddd;
+  color: #000;
+  border: 0;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.message.error {
+  background: #ffeeee;
+  padding: 10px;
+  border-radius: 10px;
+}
