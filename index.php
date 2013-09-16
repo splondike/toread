@@ -1,11 +1,8 @@
 <?php
 require 'data.php';
-// TODO: Find me
-/*
-$date = 'file-modified-time';
-header('Last-Modified: ' . $date);
-header('Etag: ' . $date);
- */
+require 'http_utils.php';
+
+check_modified($data->lastModified());
 ?>
 <!doctype html>
 <html>

@@ -65,6 +65,10 @@ class Data {
     $this->saveData();
   }
 
+  public function lastModified() {
+    return filemtime(self::SAVE_FILE);
+  }
+
   private function saveData() {
     $this->loadData();
 
